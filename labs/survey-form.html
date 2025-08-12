@@ -32,8 +32,70 @@ User Stories:
   </header>
   <main>
     <form id="survey-form" action="" method="post">
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Name" required>
+      <fieldset>
+        <legend>Personal</legend>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <br>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        <br>
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" name="number" id="number" placeholder="Age" min="7" max="120" required>
+        <br>
+        <fieldset>
+          <legend>Sex:</legend>
+          <input type="radio" id="male" value="male" name="sex">
+          <label for="male">Male</label>
+          <input type="radio" id="female" value="female" name="sex">
+          <label for="female">Female</label>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Demographics</legend>
+        <label for="dropdown" id="dropdown-label">Electoral district:</label>
+        <select name="dropdown" id="dropdown" required>
+          <option value="district1">1</option>
+          <option value="district2">2</option>
+          <option value="district3">3</option>
+          <option value="district4">4</option>
+          <option value="district5">5</option>
+          <option value="district6">6</option>
+          <option value="district7">7</option>
+          <option value="district8">8</option>
+          <option value="district9">9</option>
+        </select>
+        <br>
+        <label for="status" id="status-label">Immigration status:</label>
+        <select name="status" id="status" required>
+          <option value="" disabled selected>Select your status</option>
+          <option value="citizen">Citizen</option>
+          <option value="resident">Resident</option>
+          <option value="visitor">Visitor</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Interests</legend>
+        <label for="interests" id="interests-label">What issues most concern you? (Select all that apply.)</label>
+        <br>
+        <input type="checkbox" name="interests" value="education" id="education">
+        <label for="education">Education</label>
+        <input type="checkbox" name="interests" value="healthcare" id="healthcare">
+        <label for="healthcare">Healthcare</label>
+        <input type="checkbox" name="interests" value="infrastructure" id="infrastructure">
+        <label for="infrastructure">Infrastructure</label>
+        <input for="economy" type="checkbox" name="interests" value="economy" id="economy">
+        <label for="economy">Economy</label>
+      </fieldset>
+      <fieldset>
+        <legend>Comments</legend>
+        <label for="comments" id="comments-label">What's been on your mind about living in the VI?</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please be open and honest, but refrain from using profanity." autocorrect="on" maxlength="500"></textarea>
+      </fieldset>  
+      <button type="submit" id="submit">Submit</button>
     </form>
   </main>
 </body>
