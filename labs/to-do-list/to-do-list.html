@@ -1,0 +1,83 @@
+<!--
+User Stories:
+[x] You should have one unordered list with the class todo-list.
+
+[x] Inside the unordered list, you should have four list items.
+
+[x] Inside each list item, there should be:
+
+  [x] An input element with the type checkbox and id set to a unique value.
+  [x] A label element with the for attribute set to the corresponding input element's id.
+  [x] An unordered list with the class sub-item.
+  [x] A list item with an anchor element in it. The anchor should have the class sub-item-link, a valid href value, and a target value that makes the link open in a new tab.
+
+[] Your anchor elements shouldn't have any default text decoration.
+
+[] You should set the text color of the links to a color of your choice.
+
+[] When your links are visited, the color should change to another color of your choice.
+
+[] When your links are hovered over, the color should change to another color of your choice.
+
+[] When your links are focused, there should be a colored outline around the link.
+
+[] When your links are clicked, the color should change to another color of your choice.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul class="todo-list">
+    <li>
+      <input type="checkbox" id="css">
+      <label for="css">Basic CSS</label>
+      <ul class="sub-item">
+        <li>Build a Stylized To-Do List</li>
+        <li>Working with Backgrounds and Borders</li>
+        <li>Design a Blog Post Card</li>
+        <li>Lists, Links, CSS Background and Borders Review</li>
+        <li><a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/quiz-css-backgrounds-and-borders/quiz-css-backgrounds-and-borders" target="_blank">CSS Backgrounds and Borders Quiz</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="JavaScript">
+      <label for="JavaScript">JavaScript Fundamentals</label>
+      <ul class="sub-item">
+        <li>Variables and Strings</li>
+        <li>Booleans and Numbers</li>
+        <li>Functions</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+        <li>Loops</li>
+        <li><a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/review-javascript-fundamentals/review-javascript-fundamentals" target="_blank"> Fundamentals Review</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="build-a-website">
+      <label for="build-a-website">Finish your Website</label>
+      <ul class="sub-item">
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li><a class="sub-item-link" href="https://khaliidrahiim.github.io" target="_blank">Update</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="portfolio">
+      <label for="portfolio">Start a Portfolio</label>
+      <ul class="sub-item">
+        <li><a class="sub-item-link" href="https://goblin.tools" target="_blank">Brainstorm</a></li>
+        <li>Start a project</li>
+      </ul>
+
+    </li>
+  </ul>
+</body>
+
+</html>
