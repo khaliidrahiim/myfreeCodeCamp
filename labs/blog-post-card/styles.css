@@ -1,0 +1,36 @@
+.blog-post-card {
+  background: rgb(255, 255, 255);
+  border-radius: 2rem;
+  ;
+  width: 200px;
+  text-align: center;
+}
+
+/* Image should fill card's width and have a bottom border */
+.post-img{
+  width: 200px;
+  border-bottom: solid 5px black;
+}
+
+.post-content {
+  padding: 10px;
+  background-color: cornsilk;
+}
+
+.post-title, .post-excerpt {
+  margin: 10px;
+  color: #002d2d;
+}
+
+.read-more {
+  color: #ffffff;
+  background-color: black;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background-color: aqua;
+}
