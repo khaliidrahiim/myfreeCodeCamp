@@ -1,0 +1,48 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.feature-card-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.feature-card {
+  display: block;
+  border: 2px solid grey;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* checkbox */
+.feature-card input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 3px solid lightgrey;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+/* checkmark */
+.feature-card input[type="checkbox"]::after {
+  content: "✓";
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* checked state */
+.feature-card input[type="checkbox"]:checked {
+  background-color: orange;
+  border-color: darkorange;
+}
+
+/* show checkmark when checked */
+.feature-card input[type="checkbox"]:checked::after {
+  display: block;
+}
